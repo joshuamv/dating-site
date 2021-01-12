@@ -4,7 +4,7 @@
 body{
   margin: 0;
   padding: 0;
-  background-color: #090A0D;
+  background-color: black;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -12,6 +12,234 @@ body{
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  display: flex;
+  height: 95vh;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  color: white;
+  flex-direction: row;
+  align-items: stretch;
 }
 
-/* loading screens */
+/* form */
+
+.img-side{
+  display: flex;
+  flex-direction: column-reverse;
+  height: 90vh;
+  width: 67vw;
+  padding: 5vh 5vw 5vh 5vw;
+  background-image: url("bg.png");
+  background-color: black;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+form{
+  height: 100%;
+  width: 33vw;
+  padding: 4vh 0vw 4vh 0vw;
+  background-color: #000022;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"]{
+  height: 40px;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 8px;
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+input[list="weapons"]{
+  height: 40px;
+  padding-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 0px;
+  border-width: 0px;
+}
+
+.activebutton{
+  display: flex;
+  border-radius: 0px;
+  height: 30px;
+  background-color: #2828c7;
+  border-width: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.activebutton:hover{
+  background-color: #4444DA;
+  animation-duration: 0.3s;
+  animation-name: buttonhover;
+}
+
+@keyframes buttonhover {
+  0%   {background-color: #2828c7;}
+  100% {background-color: #4444DA;}
+}
+
+.inactivebutton {
+  display: flex;
+  border-radius: 0px;
+  height: 30px;
+  background-color: #707070;
+  border-width: 0px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #A3A3A3;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-label{
+  margin-top: 20px;
+  font-weight: 400;
+}
+
+.margintop5{
+  margin-top: 5px;
+}
+
+.margintop8{
+  margin-top: 8px;
+}
+
+.marginleft3{
+  margin-left: 3px;
+}
+
+.row-div{
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+h1{
+  font-size: 56px;
+  margin: 0 0 0 0;
+  margin-bottom: 20px;
+  padding: 0 0 0 0;
+  color: white;
+}
+
+h2{
+  padding: 0vh 0vw 0vh 5vw;
+}
+
+h3{
+  font-size: 20px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  color: white;
+}
+
+p{
+  font-size: 13px;
+  align-self: flex-end;
+}
+
+#first-label{
+  margin-top: 0px;
+}
+
+.tab{
+ height: 5vh;
+ width: 20vw;
+ padding: 0vh 5vw 0vh 5vw;
+ overflow: hidden;
+}
+
+.inactive * {
+  display: none;
+}
+
+.active{
+ width: 20vw;
+ height: 200px;
+ padding: 20vh 5vw 20vh 5vw;
+ display: flex;
+ flex-direction: column;
+ overflow: hidden;
+}
+
+#tab1{
+  background-color: #000029
+}
+
+#tab2{
+  background-color: #00003D
+}
+
+#tab3{
+  background-color: #000052
+}
+
+#tab4{
+  background-color: #000066
+}
+
+#tab5{
+  background-color: #00007A
+}
+
+#tab6{
+  background-color: #00008F
+}
+
+#tab1{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#tab2{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#tab3{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#tab4{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#tab5{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#tab6{
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}

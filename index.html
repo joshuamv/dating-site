@@ -10,38 +10,137 @@
     <!-- links to script libraries -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <script src="app.js" type="text/javascript"></script>
-    <script language="javascript" type="text/javascript" src="sketch.js"></script>
 
     <!-- fonts -->
 
-    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300;400;500;600&family=Saira:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;800&display=swap" rel="stylesheet">
     <!-- other -->
 
     <link rel='icon' href='favicon.ico' type='image/x-icon'/>
     <meta charset="utf-8">
 
-
-    <!-- search engines and social -->
-
-    <meta name="description" content="Can you land the spaceship?">
-    <meta name="keywords" content="Axiom 300, Joshua, Milwer, Shenkar, HTML, CSS, JavaScript">
-    <meta name="author" content="Joshua Milwer">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:url" content="https://joshuamv.github.io/axiom-300/" />
-    <meta property="og:title" content="Axiom 300" />
-    <meta property="og:description" content="Can you land the spaceship?" />
-    <meta property="og:image" content="https://joshuamv.github.io/axiom-300/img/fb.png" />
-    <meta property="og:type" content="game" />
-
-    <title>Axiom 300</title>
+    <title>Dating</title>
   </head>
 
 <body>
 
+<div class="img-side">
+  <h3>Find someone to scheme with 'til death do you part!</h3>
+  <h1>Dark Buddy</h1>
+</div>
+
+<form action="/app.js" method="post" autocomplete="off">
+  <h2 id="main-title">Sign Up</h2>
+
+  <div id="tab1" class="tab active">
+    <label for="fname" class="input-label" id="first-label">Full name</label>
+      <input type="text" id="fname" autofocus required>
+      <div id="button1" class="inactivebutton">Next</div>
+      <p>1/5</p>
+  </div>
+
+  <div id="tab2" class="tab inactive">
+    <label for="myphoto" class="input-label">Wicked name, now some photos</label>
+
+    <label id="photobutton" for="myphotos" class="activebutton margintop8">Select Images</label>
+    <input type="file" id="myphoto" style="display:none;" name="myphoto" multiple required>
+
+    <div id="button2" class="margintop8 inactivebutton">Next</div>
+    <p>2/5</p>
+  </div>
+
+  <div id="tab3" class="tab inactive">
+    <label id="title3" class="input-label">Gender</label>
+      <div class="row-div">
+        <input type="radio" id="alien" name="gender" value="alien">
+        <label for="alien" class="marginleft3">Alien</label>
+      </div>
+      <div class="row-div">
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female" class="marginleft3">Female</label>
+      </div>
+      <div class="row-div">
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male" class="marginleft3">Male</label>
+      </div>
+      <div class="row-div">
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other" class="marginleft3">Other</label>
+      </div>
+
+      <div id="button3" class="margintop8 inactivebutton">Next</div>
+      <p>3/5</p>
+  </div>
+
+  <div id="tab4" class="tab inactive">
+    <label id="title4" class="input-label">I'm looking for</label>
+      <div class="row-div">
+        <input type="checkbox" id="alien" name="gender2" value="alien">
+        <label for="alien" class="marginleft3">Alien</label>
+      </div>
+      <div class="row-div">
+        <input type="checkbox" id="female" name="gender2" value="female">
+        <label for="female" class="marginleft3">Female</label>
+      </div>
+      <div class="row-div">
+        <input type="checkbox" id="male" name="gender2" value="male">
+        <label for="male" class="marginleft3">Male</label>
+      </div>
+      <div class="row-div">
+        <input type="checkbox" id="other" name="gender2" value="other" required>
+        <label for="other" class="marginleft3">Other</label>
+      </div>
+
+      <div id="button4" class="margintop8 inactivebutton">Next</div>
+      <p>4/5</p>
+  </div>
+
+  <div id="tab5" class="tab inactive">
+    <label id="title5" class="input-label">Weapon of choice</label>
+    <input list="weapons" required>
+      <datalist id="weapons">
+        <option value="Robots">
+        <option value="Sword">
+        <option value="Boomerang">
+        <option value="Magic Staff">
+        <option value="Knife">
+        <option value="Laser Gun">
+        <option value="Tentacles">
+        <option value="Machete">
+        <option value="Gun">
+        <option value="Hammer">
+        <option value="Flamethrower">
+        <option value="Scythe">
+        <option value="Plasma Beam">
+        <option value="Poison">
+        <option value="Zombie Virus">
+        <option value="Freeze Ray">
+        <option value="Hallucinations">
+        <option value="Money">
+        <option value="Umbrella">
+        <option value="Firebreath">
+        <option value="Lightning">
+        <option value="Bow">
+        <option value="Hammer">
+        <option value="Hook">
+        <option value="Chainsaw">
+        <option value="Red Lightsaber">
+        <option value="Axe">
+        <option value="Magic Wand">
+        <option value="Baton">
+      </datalist>
+
+      <div id="button5" class="margintop8 inactivebutton">Submit</div>
+      <p>5/5</p>
+  </div>
+
+  <div id="tab6" class="tab inactive">
+    <label for="fname" class="input-label" id="title6">All Done!</label>
+    <p id="p6">That's all!</p>
+  </div>
+</form>
 
 </body>
 
